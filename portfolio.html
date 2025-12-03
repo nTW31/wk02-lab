@@ -18,8 +18,13 @@
     </header>
     <!-- TODO: สร้าง main ที่มี -->
     <main>
+      <!-- 1. About section -->
+      <!-- - หัวข้อ -->
+      <!-- - รูปภาพตัวเอง <img> -->
+      <!-- - ข้อมูลประกอบ -->
       <section id="about">
-        <h2>เกี่ยวกับผม</h2>
+        <h2>เกี่ยวกับผม (About)</h2>
+        <div style="text-align: center;">
         <img
           src="https://reg.buu.ac.th/registrar/getstudentimage.asp?id=67160028"
           alt="my photo"
@@ -30,15 +35,67 @@
           ต้องการสร้างเว็บไซต์และโปรเจกต์ใหม่ๆ กับอาจารย์ที่เก่งที่สุด
         </p>
       </section>
+      <hr />
     </main>
-    <!-- 1. About section -->
-    <!-- - หัวข้อ -->
-    <!-- - รูปภาพตัวเอง <img> -->
-    <!-- - ข้อมูลประกอบ -->
     <!-- 2. Portfolio section -->
     <!-- - List of projects ใช้ <figure> และ <figcaption> -->
+    <section id="portfolio">
+      <h2>ผลงาน(Portfolio)</h2>
+      <figure style="text-align: center;">
+        <img
+          src="image/image.png"
+          alt=""
+          style="width: 200%; width: 600px"
+        />
+        <figcaption>โปรเจกต์ที่ 1: สร้างหน้าWeb จับเวลากิจกรรมในเกม</figcaption>
+      </figure>
+      <br>
+      <figure style="text-align: center;">
+        <img
+          src="image/image3.png"
+          alt=""
+          style="width: 150%; width: 500px"
+        />
+        <img
+          src="image/image2.png"
+          alt=""
+          style="width: 150%; width: 400px"
+        />
+        <figcaption>
+          โปรเจกต์ที่ 2: ทดลองใช้คำสั่งการสร้าง HTML JS CSS
+        </figcaption>
+      </figure>
+    </section>
+    <hr />
     <!-- 3. Contact section -->
     <!-- - Contact form -->
     <!-- TODO: สร้าง footer -->
+     <section id="contact">
+        <h2>ติดต่อฉัน (Contact)</h2>
+        <form action="#" method="post">
+          <div>
+            <label for="name">ชื่อ-นามสกุล:</label><br />
+            <input type="text" id="name" name="name" required />
+          </div>
+          <br />
+          <div>
+            <label for="email">อีเมล:</label><br />
+            <input type="email" id="email" name="email" required/>
+          </div>
+          <br />
+          <div>
+            <label for="message">ข้อความ:</label><br />
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          </div>
+          <br />
+          <button type="submit">ส่งข้อความ</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <hr />
+      <p style="text-align: center;">
+        &copy; 2025 My Portfolio. จัดทำโดย นักศึกษาที่ทุ่มเท(67160028)
   </body>
 </html>
